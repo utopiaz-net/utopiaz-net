@@ -13,13 +13,23 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
   <body>
     <Header title={SITE_TITLE} />
     <main class="container">
-      <h1 class="text-6xl font-bold">
-        Explorons ensemble les horizons de l'<span>Utopie</span> numérique.
-      </h1>
-      <p>
-        <span>Utopiaz</span>, où l'imagination prend vie et les frontières
-        s'estompent. Un espace où les possibilités semblent infinies.
-      </p>
+      <div class="flex flex-col gap-4 py-8">
+        <h1 class="text-6xl font-bold text-center">
+          Explorons ensemble les horizons de l'<span class="text-brand"
+            >Utopie</span
+          > numérique.
+        </h1>
+        <p class="text-lg text-gray-700 text-center">
+          <span class="font-bold">Utopiaz</span>, où l'imagination prend vie et
+          les frontières s'estompent. <br /> Un espace où les possibilités semblent
+          infinies.
+        </p>
+      </div>
+      <img
+        src="/utopia-header.webp"
+        alt="Image d'une société utopique numérique"
+        class="mb-8 rounded-md"
+      />
     </main>
     <Footer />
   </body>
