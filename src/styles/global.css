@@ -6,4 +6,8 @@
   body {
     @apply bg-[#FFF] text-slate-900 dark:bg-slate-900 dark:text-[#FFF] font-inter;
   }
+  .bg-clip-text {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 }

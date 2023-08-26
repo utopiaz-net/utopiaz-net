@@ -5,6 +5,7 @@ import Footer from "../components/Footer.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 import Bordereau from "../components/Bordereau.astro";
 import FeatureLastBlogPost from "../components/FeatureLastBlogPost.astro";
+import Citation from "../components/Citation.astro";
 ---
 
 <!DOCTYPE html>
@@ -33,11 +34,12 @@ import FeatureLastBlogPost from "../components/FeatureLastBlogPost.astro";
         src="/utopia-header.webp"
         title="Image d'une société utopique numérique"
         alt="Image d'une société utopique numérique"
-        class="pt-8 rounded-md"
+        class="mt-8"
       />
     </main>
     <Bordereau />
     <FeatureLastBlogPost />
+    <Citation />
     <Footer />
   </body>
 </html>

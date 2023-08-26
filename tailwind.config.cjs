@@ -342,6 +342,7 @@ module.exports = {
         "monospace",
       ],
       inter: ["Inter", "sans-serif"],
+      recoleta: ["Recoleta", "serif"],
     },
     fontSize: {
       xs: ["0.75rem", { lineHeight: "1rem" }],
