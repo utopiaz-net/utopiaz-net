@@ -1,5 +1,6 @@
 ---
 import Article from "./Article.astro";
+import { getLastPost } from "../consts";
 ---
 
 <section class="container py-6 md:py-12">
@@ -15,9 +16,9 @@ import Article from "./Article.astro";
         >Tech</span
       >
       <Article
-        title="Titre du dernier article"
-        link="#"
-        summary="Résumé du dernier article, Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla nobis labore facere placeat ullam, obcaecati dolor dolores ratione quasi, sit minima laborum similique delectus vero voluptate, eos illum! Numquam, corporis!"
+        title={getLastPost.data.title}
+        link={`/blog/${getLastPost.slug}/`}
+        summary={getLastPost.data.description}
       />
     </div>
     <div>

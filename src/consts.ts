@@ -9,3 +9,6 @@ export const SITE_DESCRIPTION = "Welcome to my website!";
 export const getAllPosts = (await getCollection("blog")).sort(
   (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
 );
+
+// Get THE MOST RECENT article (the last one basically)
+export const getLastPost = getAllPosts[0];
