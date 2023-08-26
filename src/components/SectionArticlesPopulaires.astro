@@ -1,5 +1,6 @@
 ---
 import ArticlesPopulaires from "./ArticlesPopulaires.astro";
+import { getAllPosts } from "../consts";
 ---
 
 <section class="container py-6 md:py-12">
@@ -9,22 +10,25 @@ import ArticlesPopulaires from "./ArticlesPopulaires.astro";
   </h4>
   <div class="grid grid-cols-3 gap-2">
     <ArticlesPopulaires
-      title="Imacs en fin de vie ?"
-      tag="Tech"
-      imgLink="blog-1.jpg"
-      summary="Yeah idk"
+      title={getAllPosts[1].data.title}
+      tag={getAllPosts[1].data.tags[0]}
+      heroImage={getAllPosts[1].data.heroImage}
+      summary={getAllPosts[1].data.description}
+      link={`/blog/${getAllPosts[1].slug}/`}
     />
     <ArticlesPopulaires
-      title="Imacs en fin de vie ?"
-      tag="Tech"
-      imgLink="utopia-header.webp"
-      summary="Yeah idk"
+      title={getAllPosts[2].data.title}
+      tag={getAllPosts[2].data.tags[0]}
+      heroImage={getAllPosts[2].data.heroImage}
+      summary={getAllPosts[2].data.description}
+      link={`/blog/${getAllPosts[2].slug}/`}
     />
     <ArticlesPopulaires
-      title="Imacs en fin de vie ?"
-      tag="Tech"
-      imgLink="blog-2.jpg"
-      summary="Yeah idk"
+      title={getAllPosts[3].data.title}
+      tag={getAllPosts[3].data.tags[0]}
+      heroImage={getAllPosts[3].data.heroImage}
+      summary={getAllPosts[3].data.description}
+      link={`/blog/${getAllPosts[3].slug}/`}
     />
   </div>
 </section>
