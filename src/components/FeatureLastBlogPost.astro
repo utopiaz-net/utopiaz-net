@@ -11,10 +11,15 @@ import { getLastPost } from "../consts";
       >
         📚 Notre dernier article
       </h2>
-      <span
-        class="rounded-full bg-brand/15 w-fit py-1 px-3 cursor-pointer font-semibold text-sm"
-        >Tech</span
-      >
+      <div class="flex align-center gap-2 flex-wrap">
+        {
+          getLastPost.data.tags.map((tag) => (
+            <span class="rounded-full bg-brand/15 w-fit py-1 px-3 font-semibold text-sm inline-block">
+              {tag}
+            </span>
+          ))
+        }
+      </div>
       <Article
         title={getLastPost.data.title}
         link={`/blog/${getLastPost.slug}/`}
