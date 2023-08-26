@@ -23,8 +23,9 @@ import { getLastPost } from "../consts";
     </div>
     <div>
       <img
-        src="/blog-placeholder-1.jpg"
-        alt=""
+        src={getLastPost.data.heroImage}
+        alt={getLastPost.data.title}
+        title={getLastPost.data.title}
         class="h-full object-center object-cover"
       />
     </div>
