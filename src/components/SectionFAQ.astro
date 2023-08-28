@@ -1,0 +1,36 @@
+---
+import QuestionFAQ from "./QuestionFAQ.astro";
+import SectionTitle from "./SectionTitle.astro";
+---
+
+<section class="container py-6 md:py-12">
+  <SectionTitle
+    subtitle="FAQ"
+    title="Questions Fréquentes"
+    subtext="Apprenez-en plus sur Utopiaz et le monde qu'il cherche à offrir."
+  />
+  <div class="grid items-end pt-8 text-left md:gap-16 md:grid-cols-2">
+    <div>
+      <QuestionFAQ
+        title="Pourquoi Utopiaz ?"
+        subtext={"Utopiaz, où l'imagination prend vie et les frontières s'estompent.\n" +
+          "Un espace où les possibilités semblent infinies. \n" +
+          "Voilà les valeurs que l'on cherche à transmettre."}
+      />
+      <QuestionFAQ
+        title="Qui peut bénéficier de la lecture de ce blog ?"
+        subtext={"Utopiaz est conçu pour accueillir un public diversifié, allant des passionnés de technologie et d'informatique aux rêveurs curieux et aux penseurs critiques."}
+      />
+    </div>
+    <div>
+      <QuestionFAQ
+        title="Quels sujets sont abordés sur Utopiaz ?"
+        subtext={"Notre objectif est de créer un espace où les lecteurs peuvent être inspirés à imaginer un avenir où la technologie et l'utopie se rejoignent pour créer un monde meilleur."}
+      />
+      <QuestionFAQ
+        title="Qui est derrière Utopiaz ?"
+        subtext={"L'équipe derrière Utopiaz est composée de passionnés de la technologie, de l'informatique et de l'innovation, chacun apportant une expertise unique à notre blog."}
+      />
+    </div>
+  </div>
+</section>
