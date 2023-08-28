@@ -1,13 +1,11 @@
 ---
 import ArticlesPopulaires from "./ArticlesPopulaires.astro";
 import { getAllPosts } from "../consts";
+import SectionTitle from "./SectionTitle.astro";
 ---
 
 <section class="container py-6 md:py-12">
-  <p class="text-brand font-bold text-center">BLOG</p>
-  <h4 class="pb-6 font-semibold text-3xl text-center">
-    Nos Articles Populaires
-  </h4>
+  <SectionTitle subtitle="BLOG" title="Nos Articles Populaires" />
   <div class="grid grid-cols-3 gap-2">
     <ArticlesPopulaires
       title={getAllPosts[1].data.title}
