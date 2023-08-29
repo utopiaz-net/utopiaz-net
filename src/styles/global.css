@@ -6,6 +6,20 @@
   body {
     @apply bg-[#FFF] text-slate-900 dark:bg-slate-900 dark:text-[#FFF] font-inter;
   }
+  article p {
+    margin-bottom: 1rem;
+  }
+  article h2 {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    line-height: 1;
+    letter-spacing: -1px;
+  }
+  article a {
+    color: #1e40af;
+    text-decoration: underline;
+  }
   .bg-clip-text {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
