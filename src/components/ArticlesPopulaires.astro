@@ -4,12 +4,14 @@ const { title, tag, heroImage, summary, link } = Astro.props;
 
 <div>
   <a href={link} title={title} class="flex flex-col gap-3">
-    <img
-      src={heroImage}
-      alt={title}
-      title={title}
-      class="aspect-[3/4] object-cover object-center"
-    />
+    <div class="aspect-[3/4]">
+      <img
+        src={heroImage}
+        alt={title}
+        title={title}
+        class="object-cover object-center w-full h-full"
+      />
+    </div>
     <div class="flex flex-col gap-2 md:flex-row md:justify-between items-start">
       <p class="uppercase font-medium tracking-tight md:text-xl text-lg">
         {title}

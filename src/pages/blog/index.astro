@@ -5,30 +5,39 @@ import Footer from "../../components/Footer.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../../consts";
 import FormattedDate from "../../components/FormattedDate.astro";
 import { getAllPosts, getLastPost } from "../../consts";
+import SectionTitle from "../../components/SectionTitle.astro";
 ---
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
   </head>
   <body>
     <Header />
-    <main>
+    <main class="container py-6 md:py-12">
       <section>
-        <ul>
+        <SectionTitle
+          subtitle="BLOG"
+          title="Nos Articles"
+          subtext="Retrouvez l'intégralité des posts de notre blog, regroupés sur cette page."
+        />
+        <ul class="mt-4">
           {
             getAllPosts.map((post) => (
-              <li>
+              <li class="mb-8">
                 <a href={`/blog/${post.slug}/`}>
-                  <img
-                    width={720}
-                    height={360}
-                    src={post.data.heroImage}
-                    alt=""
-                  />
-                  <h4 class="title">{post.data.title}</h4>
-                  <p class="date">
+                  <div class="aspect-video mb-4">
+                    <img
+                      src={post.data.heroImage}
+                      alt=""
+                      class="w-full h-full object-cover object-center block rounded-xl shadow-md"
+                    />
+                  </div>
+                  <h4 class="text-brand text-xl md:text-2xl font-semibold">
+                    {post.data.title}
+                  </h4>
+                  <p class="text-gray-600 text-sm">
                     <FormattedDate date={post.data.pubDate} />
                   </p>
                 </a>
