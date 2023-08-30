@@ -6,6 +6,12 @@
   body {
     @apply bg-[#FFF] text-slate-900 dark:bg-slate-900 dark:text-[#FFF] font-inter;
   }
+  #bg-img {
+    background-image: url(/utopia-header.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
   article p {
     margin-bottom: 1rem;
   }

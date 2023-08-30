@@ -17,28 +17,30 @@ import SectionFAQ from "../components/SectionFAQ.astro";
   </head>
   <body>
     <Header title={SITE_TITLE} />
-    <main class="container py-6 md:py-12">
-      <div class="flex flex-col gap-2 lg:gap-6 md:gap-4">
-        <h1
-          class="text-3xl lg:text-6xl md:text-5xl sm:text-4xl font-bold text-center"
-        >
-          Explorons ensemble les horizons de l'<span class="text-brand"
-            >Utopie</span
-          > numérique.
-        </h1>
-        <p class="text-lg text-gray-700 dark:text-gray-300 text-center">
-          <span class="font-bold">Utopiaz</span>, où l'imagination prend vie et
-          les frontières s'estompent. <br /> Un espace où les possibilités semblent
-          infinies.
-        </p>
-      </div>
-      <img
-        src="/utopia-header.webp"
-        title="Image d'une société utopique numérique"
-        alt="Image d'une société utopique numérique"
-        class="mt-8"
-      />
-    </main>
+    <div id="bg-img" class="mb-16 lg:mb-20">
+      <main class="container py-20 md:py-36">
+        <div class="flex flex-col gap-2 lg:gap-6 md:gap-4">
+          <h1
+            class="text-3xl lg:text-6xl md:text-5xl sm:text-4xl font-bold text-center"
+          >
+            Explorons ensemble les horizons de l'<span class="text-brand"
+              >Utopie</span
+            > numérique.
+          </h1>
+          <p class="text-lg text-white dark:text-gray-300 text-center">
+            <span class="font-bold">Utopiaz</span>, où l'imagination prend vie
+            et les frontières s'estompent. <br /> Un espace où les possibilités semblent
+            infinies.
+          </p>
+        </div>
+        <!-- <img
+          src="/utopia-header.webp"
+          title="Image d'une société utopique numérique"
+          alt="Image d'une société utopique numérique"
+          class="mt-8"
+        /> -->
+      </main>
+    </div>
     <Bordereau />
     <FeatureLastBlogPost />
     <Citation />
