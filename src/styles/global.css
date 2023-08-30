@@ -15,8 +15,9 @@
   article p {
     margin-bottom: 1rem;
   }
-  article h2 {
-    font-size: 2rem;
+  article h2,
+  article h3 {
+    font-size: 1.7rem;
     font-weight: 500;
     margin-bottom: 0.5rem;
     line-height: 1;
@@ -29,5 +30,10 @@
   .bg-clip-text {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+  }
+  pre {
+    padding: 1.5em;
+    border-radius: 8px;
+    margin-bottom: 2rem;
   }
 }
