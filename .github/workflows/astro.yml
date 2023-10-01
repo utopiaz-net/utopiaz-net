@@ -80,6 +80,13 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
+      - name: Debug SSH Key
+        run: |
+          echo "$SSH_UTOPIAZ_SERVER" > ssh_key.pem
+          cat ssh_key.pem
+        env:
+          SSH_UTOPIAZ_SERVER: ${{ secrets.SSH_UTOPIAZ_SERVER }}
+
       - name: SSH into VPS and update the site
         run: |
           ssh -p 6691 -i ${{ secrets.SSH_UTOPIAZ_SERVER }} debian@46.105.28.9 "cd /var/www/utopiaz && git pull utopiaz production"
