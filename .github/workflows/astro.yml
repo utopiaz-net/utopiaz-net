@@ -81,11 +81,18 @@ jobs:
         uses: actions/checkout@v3
 
       - name: SSH into VPS and update the site
-        run: |
-          ssh -p 6691 -i ${{ secrets.SSH_UTOPIAZ_SERVER }} debian@46.105.28.9 "cd /var/www/utopiaz && git pull utopiaz production"
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          key: ${{ secrets.SSH_UTOPIAZ_SERVER }}
+          port: ${{ secrets.PORT }}
+          script: |
+            cd /var/www/utopiaz
+            git pull utopiaz production
 
   notify_success:
-    needs: build
+    needs: deploy
     runs-on: ubuntu-latest
     steps:
       - name: Notify on success
@@ -97,7 +104,7 @@ jobs:
           text: "Woohoo ! Réussite du workflow Utopiaz"
 
   notify_failure:
-    needs: build
+    needs: deploy
     runs-on: ubuntu-latest
     steps:
       - name: Notify on failure
