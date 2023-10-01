@@ -14,7 +14,7 @@ import { getLastPost } from "../consts";
       <div class="flex align-center gap-2 flex-wrap">
         {
           getLastPost.data.tags.map((tag) => (
-            <span class="rounded-full bg-brand/15 w-fit py-1 px-3 font-semibold text-sm inline-block">
+            <span class="rounded-full bg-brand/15 dark:bg-brand/50 w-fit py-1 px-3 font-semibold text-sm inline-block">
               {tag}
             </span>
           ))

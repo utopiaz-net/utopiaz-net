@@ -19,13 +19,13 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
     <Header />
     <main class="container py-6 md:py-12">
       <article>
-        <div>
+        <div class="flex items-center justify-center">
           {
             heroImage && (
               <img
                 src={heroImage}
                 alt={title}
-                class="block rounded-xl shadow-md w-full aspect-video object-cover object-center"
+                class="block rounded-xl shadow-md w-2/3 aspect-video object-cover object-center"
               />
             )
           }
@@ -43,7 +43,7 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
               }
             </div>
             <h1
-              class="text-2xl lg:text-5xl md:text-4xl sm:text-3xl font-bold text-center mb-4 text-brand"
+              class="text-2xl lg:text-5xl md:text-4xl sm:text-3xl font-bold text-center mb-4 text-brand "
             >
               {title}
             </h1>

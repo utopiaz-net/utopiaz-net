@@ -17,11 +17,11 @@ const { title, tag, heroImage, summary, link } = Astro.props;
         {title}
       </p>
       <span
-        class="rounded-full bg-brand/15 w-fit py-1 px-2 font-semibold text-xs inline-block"
+        class="rounded-full bg-brand/15 dark:bg-brand/50 w-fit py-1 px-2 font-semibold text-xs inline-block"
       >
         {tag}
       </span>
     </div>
-    <p class="text-gray-700 text-sm">{summary}</p>
+    <p class="text-gray-700 dark:text-gray-500 text-sm">{summary}</p>
   </a>
 </div>

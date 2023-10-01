@@ -3,7 +3,7 @@ import HeaderLink from "./HeaderLink.astro";
 import { SITE_TITLE } from "../consts";
 ---
 
-<header class="bg-white sticky z-50 w-full top-0 shadow-md">
+<header class="bg-white text-slate-900 dark:bg-slate-900 dark:text-[#FFF] sticky z-50 w-full top-0 shadow-md">
   <nav id="main-nav" class="flex items-center justify-between py-8 container">
     <h2 class="font-semibold text-lg lg:text-xl">
       <a href="/" aria-label="Page d'accueil du blog">{SITE_TITLE}</a>
@@ -67,7 +67,7 @@ import { SITE_TITLE } from "../consts";
     </div>
     <ul
       id="toggled-menu"
-      class="bg-white w-full absolute top-0 left-0 -translate-y-full -z-10 border-b border-gray-300 flex flex-col items-center text-center shadow-md"
+      class="bg-white text-slate-900 dark:bg-slate-900 dark:text-[#FFF] w-full absolute top-0 left-0 -translate-y-full -z-10 border-b border-gray-300 dark:border-gray-600 flex flex-col items-center text-center shadow-md"
     >
       <li class="py-4 w-full font-semibold uppercase">
         <HeaderLink href="/">Home</HeaderLink>
