@@ -82,7 +82,8 @@ jobs:
 
       - name: SSH into VPS and update the site
         run: |
-          ssh-keyscan -H 46.105.28.9 >> /home/debian/.ssh/known_hosts
+          # ssh -p 6691 -i ${{ secrets.SSH_UTOPIAZ_SERVER }} debian@46.105.28.9
+          # ssh-keyscan -H 46.105.28.9 >> /home/debian/.ssh/known_hosts
           ssh -p 6691 -i ${{ secrets.SSH_UTOPIAZ_SERVER }} debian@46.105.28.9 "cd /var/www/utopiaz && git pull utopiaz production"
 
   notify_success:
