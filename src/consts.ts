@@ -3,7 +3,8 @@
 import { getCollection } from "astro:content";
 
 export const SITE_TITLE = "Utopiaz";
-export const SITE_DESCRIPTION = "Welcome to my website!";
+export const SITE_DESCRIPTION =
+  "Découvrez l'avenir numérique sur Utopiaz. Plongez dans les dernières innovations, tendances et analyses technologiques pour façonner votre utopie numérique aujourd'hui.";
 
 // Get all `src/content/blog/` entries and sort them by the most recent one
 export const getAllPosts = (await getCollection("blog")).sort(
