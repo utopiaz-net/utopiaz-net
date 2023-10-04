@@ -1,0 +1,74 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+---
+
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <BaseHead title={"Utopiaz - Politique de confidentialité"} description={SITE_DESCRIPTION} />
+  </head>
+  <body>
+    <Header title={SITE_TITLE} />
+    <main class="container py-20">
+        <div class="flex flex-col gap-4 lg:gap-6 px-4 md:px-0">
+            <h1
+            class="text-2xl lg:text-4xl md:text-3xl sm:text-3xl font-bold text-center"
+          >
+          Politique de confidentialité
+            </h1>
+            <p class="text-center">www.utopiaz.net</p>
+            <p class="text-center">Olivier R.</p>
+            <p class="text-center">Sacha R.</p>
+            <p class="text-center font-bold">Type de site : Blog</p>
+            <p class="font-bold underline">Le but de cette politique de confidentialité</p>
+            <p>Le but de cette politique de confidentialité est d'informer les utilisateurs de notre site des données personnelles que nous recueillerons ainsi que les informations suivantes, le cas échéant :
+	</p>
+    <ol class="list-disc">
+        <li>Les données personnelles que nous recueillerons</li>
+        <li>L'utilisation des données recueillies</li>
+        <li>Qui a accès aux données recueillies</li>
+        <li>Les droits des utilisateurs du site</li>
+        <li>La politique de cookies du site </li>
+    </ol>
+    <h2 class="font-bold underline">Collecte d'informations personnelles</h2>
+    <p>Nous pouvons collecter des informations personnelles vous concernant lorsque vous interagissez avec notre site, y compris, mais sans s'y limiter, lorsque vous vous abonnez à notre newsletter, commentez nos articles, ou nous contactez via le formulaire de contact. Les informations personnelles que nous pouvons collecter incluent :</p>
+    <ul class="list-disc">
+        <li>Votre nom</li>
+        <li>Votre adresse e-mail</li>
+        <li>Votre adresse IP</li>
+        <li>Informations de navigateur web</li>
+        <li>D'autres informations que vous choisissez de partager avec nous</li>
+    </ul>
+
+    <h2 class="font-bold underline">Utilisation des informations personnelles</h2>
+    <p>Nous utilisons les informations personnelles que nous collectons pour les finalités suivantes :</p>
+    <ul>
+        <li>Vous fournir des mises à jour sur nos articles et notre blog</li>
+        <li>Répondre à vos questions et commentaires</li>
+        <li>Améliorer notre site web et nos contenus</li>
+        <li>Prévenir les activités frauduleuses</li>
+    </ul>
+
+    <h2 class="font-bold underline">Divulgation des informations</h2>
+    <p>Nous ne vendons, n'échangeons, ni ne louons vos informations personnelles à des tiers. Cependant, nous pouvons divulguer vos informations dans les situations suivantes :</p>
+    <ul>
+        <li>Lorsque cela est nécessaire pour se conformer à la loi</li>
+        <li>Lorsque cela est nécessaire pour protéger nos droits, votre sécurité ou celle d'autrui</li>
+        <li>Dans le cadre d'une fusion, d'une acquisition ou d'une vente d'actifs, auquel cas vos informations pourraient être transférées à un tiers</li>
+    </ul>
+
+    <h2 class="font-bold underline">Sécurité des informations</h2>
+    <p>Nous prenons des mesures raisonnables pour protéger vos informations personnelles contre la perte, le vol, l'accès non autorisé, la divulgation, la modification ou la destruction. Cependant, aucune méthode de transmission sur Internet ou de stockage électronique n'est totalement sécurisée.</p>
+
+    <h2 class="font-bold underline">Vos choix</h2>
+    <p>Vous pouvez choisir de ne pas fournir certaines informations personnelles, bien que cela puisse vous empêcher d'accéder à certaines fonctionnalités de notre site. Vous pouvez également vous désabonner de notre newsletter à tout moment en suivant les instructions de désabonnement incluses dans chaque e-mail.</p>
+
+    <a href="mailto:hello@utopiaz.net" class="hover:underline font-bold dark:text-indigo-300 w-fit">Nous contacter</a>
+        </div>
+    </main>
+    <Footer />
+  </body>
+</html>
