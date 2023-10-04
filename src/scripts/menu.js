@@ -12,10 +12,8 @@ function toggleNav() {
   toggledMenu.classList.toggle("pb-4");
 
   if (toggledMenu.classList.contains("-translate-y-full")) {
-    toggleMenuImg.setAttribute("src", "/hamburger-icon.svg");
     toggleMenuBtn.setAttribute("aria-expanded", "false");
   } else {
-    toggleMenuImg.setAttribute("src", "/x-mark.svg");
     toggleMenuBtn.setAttribute("aria-expanded", "true");
   }
 }

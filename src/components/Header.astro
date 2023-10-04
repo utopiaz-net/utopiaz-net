@@ -3,7 +3,9 @@ import HeaderLink from "./HeaderLink.astro";
 import { SITE_TITLE } from "../consts";
 ---
 
-<header class="bg-white text-slate-900 dark:bg-slate-900 dark:text-[#FFF] sticky z-50 w-full top-0 shadow-md">
+<header
+  class="bg-white text-slate-900 dark:bg-slate-900 dark:text-[#FFF] sticky z-50 w-full top-0 shadow-md"
+>
   <nav id="main-nav" class="flex items-center justify-between py-8 container">
     <h2 class="font-semibold text-lg lg:text-xl">
       <a href="/" aria-label="Page d'accueil du blog">{SITE_TITLE}</a>
@@ -57,12 +59,20 @@ import { SITE_TITLE } from "../consts";
         class="hover:bg-brand/15 focus:bg-brand/15 dark:hover:bg-slate-800 p-1.5 rounded-md cursor-pointer"
         title="Toggle menu"
       >
-        <img
-          src="/hamburger-icon.svg"
-          alt=""
-          height="24"
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
           width="24"
-        />
+          height="24"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          stroke-width="1.5"
+          class="w-6 h-6"
+          ><line x1="4" x2="20" y1="12" y2="12"></line><line
+            x1="4"
+            x2="20"
+            y1="6"
+            y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg
+        >
       </button>
     </div>
     <ul
